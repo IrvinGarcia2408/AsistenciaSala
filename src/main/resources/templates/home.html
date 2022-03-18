@@ -32,8 +32,8 @@
 					<td th:text="${estudiante.estMatricula}">1</td>
 					<td th:text="${estudiante.estLicenciatura}">1</td>
 					<td>
-					<a href="" class="btn btn-warning">Editar</a>
-					<a href="" class="btn btn-danger">Eliminar</a>
+					<a th:href="@{/estudiantes/editAlumno/{id}  (id=${estudiante.id} )}" class="btn btn-warning">Editar</a>
+					<a th:href="@{/estudiantes/deleteAlumno/{id}  (id=${estudiante.id} )}" class="btn btn-danger">Eliminar</a>
 					</td>
 				</tr>
 			</tbody>
