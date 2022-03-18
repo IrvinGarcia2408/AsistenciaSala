@@ -1,6 +1,5 @@
 package asistencia.ceti.controller;
 
-<<<<<<< HEAD
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -9,8 +8,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
-=======
->>>>>>> refs/heads/edson
 import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -62,9 +59,6 @@ public class EstudianteController {
 		estudianteRepository.save(estudiante);
 		return "redirect:/estudiantes";
 	}
-<<<<<<< HEAD
-	
-=======
 
 	@GetMapping("/editAlumno/{id}")
 	// @PathVariable AYUDA A RECIBIR EL VALOR DE LA URL, O DEFINIR
@@ -85,6 +79,4 @@ public class EstudianteController {
 		estudianteRepository.delete(est);
 		return "redirect:/estudiantes";
 	}
->>>>>>> refs/heads/edson
-
 }
