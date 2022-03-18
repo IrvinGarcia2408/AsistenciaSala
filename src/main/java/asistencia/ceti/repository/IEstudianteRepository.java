@@ -7,6 +7,6 @@ import asistencia.ceti.model.Estudiante;
 
 //OCUPAR METODOS DE JPA PARA REALIZAR EL CRUD
 @Repository
-public interface IEstudianteRepository extends JpaRepository<Estudiante, Integer>{
-	
+public interface IEstudianteRepository extends JpaRepository<Estudiante, Integer> {
+
 }

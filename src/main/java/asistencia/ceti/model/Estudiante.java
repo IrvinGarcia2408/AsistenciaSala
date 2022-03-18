@@ -7,16 +7,16 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="estudiantes")
+@Table(name = "estudiantes")
 public class Estudiante {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
-	
+
 	private String estMatricula;
 	private String estNombre;
 	private Integer estLicenciatura;
-	
+
 	public Estudiante() {
 		super();
 	}
@@ -66,6 +66,5 @@ public class Estudiante {
 		return "Estudiante [id=" + id + ", estMatricula=" + estMatricula + ", estNombre=" + estNombre
 				+ ", estLicenciatura=" + estLicenciatura + "]";
 	}
-	
-	
+
 }
